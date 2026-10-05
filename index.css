@@ -38,6 +38,15 @@ body {
   margin: 0; font-family: var(--font); color: var(--text); line-height: 1.6;
   background: var(--bg); overflow-x: hidden;
 }
+.release-banner {
+  background: linear-gradient(135deg, var(--c1), var(--c3));
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 8px 30px -12px var(--c1);
+}
 img { max-width: 100%; display: block; }
 h1, h2, h3 { line-height: 1.15; margin: 0 0 .5em; }
 h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); text-align: center; margin-bottom: 1.5em; }
