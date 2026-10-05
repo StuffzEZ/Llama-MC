@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Llama MC</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="LMC.png" alt="Llama MC logo" width="40" height="40">
+      <span>Llama MC</span>
+    </a>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Llama</a>
+      <a href="#modes">Game modes</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-small" href="#join">Join</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-logo" src="LMC.png" alt="Llama MC logo" width="160" height="160">
+      <h1>Llama MC</h1>
+      <p class="lead">Where Minecraft multiplayer shines.</p>
+      <div class="hero-actions">
+        <button class="btn" id="copy-ip" type="button" data-ip="play.llamamc.stufy.qzz.io">
+          <span id="copy-label">play.llamamc.stufy.qzz.io</span>
+        </button>
+        <a class="btn btn-ghost" href="#join">How to join</a>
+      </div>
+      <p class="hero-stat"><span class="pulse" id="pulse"></span> <span id="player-count">--</span> players online</p>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="section" id="gallery">
+      <h2>Our Server</h2>
+      <div class="carousel" id="carousel" aria-roledescription="carousel">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="viewport">
+          <div class="track">
+            <figure class="slide">
+              <img src="image-1.png" alt="Image 1">
+              <figcaption><h3>Lobby Minigames</h3><p>Don't want to get into anything serious? Play a friendly game of football (soccer) in the lobby!</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image-2.png" alt="Image 2">
+              <figcaption><h3>Hand-crafted lobby</h3><p>Our lobby has many hidden secrets and a wide range of things to explore while you are waiting for your friends!</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image-3.png" alt="Image 3">
+              <figcaption><h3>Amazing structures</h3><p>Explore amazing structures like this... (go to the next photo)</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image-5.png" alt="Image 4">
+              <figcaption><h3>Amazing structures</h3><p>And this! On Llama MC. With unique boss fights, loot, exploration, and combat, there is much to choose from.</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="minigames.png" alt="Image 5">
+              <figcaption><h3>Minigames</h3><p>Play many minigames such as tower defense (shown in the image) and much more coming soon...</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="minimaps.png" alt="Image 6">
+              <figcaption><h3>Minimaps</h3><p>Explore your favourite maps from your favourite games and media! Or scare yourself in our very immersive backrooms, I guess...</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="sift.png" alt="Image 7">
+              <figcaption><h3>[EARLY] The Sift</h3><p>Play the Sift early on Llama MC. Note: it may be inaccurate since not much information was known at the time of implementing it. As well as this, it may not fully work since we are still trying to develop it. Images may not be accurate.</p></figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="survival.png" alt="Image 8">
+              <figcaption><h3>Survival</h3><p>Is this too fancy for you? Just want to play regular survival? Sure! We even have different seasons!</p></figcaption>
+            </figure>
+          </div>
+          <button class="arrow prev" type="button" aria-label="Previous image">&#8249;</button>
+          <button class="arrow next" type="button" aria-label="Next image">&#8250;</button>
+        </div>
+        <div class="dots" role="tablist" aria-label="Choose image"></div>
+      </div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="section" id="why">
+      <h2>Reasons why Llama MC is right for you</h2>
+      <ol class="reasons">
+        <li>
+          <span class="bubble">1</span>
+          <div class="card"><h3>Get new Minecraft updates early</h3><p>Our developers try to add new Minecraft features that have been announced even before they come out.</p></div>
+        </li>
+        <li>
+          <span class="bubble">2</span>
+          <div class="card"><h3>Java &amp; Bedrock Crossplay</h3><p>Powered by Geyser, Bedrock and Java players can play in unison (at the same time) without much latency or bugs.</p></div>
+        </li>
+        <li>
+          <span class="bubble">3</span>
+          <div class="card"><h3>Finely tuned gameplay</h3><p>Each aspect of the server is carefully considered and crafted so you can have the best experience.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats">
+      <div><strong id="stat-online">--</strong><span>Players online</span></div>
+      <div><strong id="stat-max">--</strong><span>Max players</span></div>
+      <!--<div><strong>00</strong><span>Amet elit</span></div>-->
+      <div><strong>24/7</strong><span>Uptime</span></div>
+    </section>
+
+    <!-- GAME MODES -->
+    <section class="section" id="modes">
+      <h2>Game modes</h2>
+      <div class="grid">
+        <article class="card mode"><img src="survival.png" alt=""><h3>Survival</h3><p>Play Minecraft survival the Llama way</p></article>
+        <article class="card mode"><img src="minigames.png" alt=""><h3>Minigames/Parkour</h3><p>Do parkour and play various Minigames on the server.</p></article>
+        <article class="card mode"><img src="minimaps.png" alt=""><h3>Minimaps</h3><p>Play various mini-maps from other popular games/media such as the Backrooms</p></article>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="section">
+      <div class="cta card">
+        <svg width="72px" height="72px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"><g><path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#5865F2" fill-rule="nonzero"></path></g></svg>
+        <div>
+          <h2>Join the community</h2>
+          <p>TBC</p>
+        </div>
+        <a class="btn" href="#">Join our Discord</a>
+      </div>
+      <br>
+      <div class="cta card">
+        <svg height="72" width="72" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="background-color: #25D366; fill:#ffffff; border-radius: 5%;"><title>whatsapp</title><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" /></svg>
+        <div>
+          <h2>Follow us on WhatsApp</h2>
+          <p>Get early news and updates on everything Llama MC</p>
+        </div>
+        <a class="btn" href="https://whatsapp.com/channel/0029Vb8x0657DAX4wUML8I3d">Follow on WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section narrow" id="faq">
+      <h2>Frequently asked questions</h2>
+      <details class="card"><summary>Why can't I get onto the Minecraft server</summary><p>If you cannot get onto the Minecraft server, please make sure the server is online and you have typed in the IP correctly. The player count may also be maxed out.</p></details>
+      <details class="card"><summary>Why is the server sometimes offline?</summary><p>The server may sometimes be offline for short periods of time during maintenance or the daily restart. At around 08:30 GMT, the server restarts to clear lag.</p></details>
+      <details class="card"><summary>How can I get VIP or a higher rank?</summary><p>We only offer higher ranks to players who have been playing for a long time, even during the alpha stages of the server. Moderator roles are also sometimes given out through the Discord.</p></details>
+    </section>
+
+    <!-- JOIN -->
+    <section class="section" id="join">
+      <h2>How to join</h2>
+      <div class="grid two">
+        <article class="card join">
+          <h3>Java Edition</h3>
+          <ol>
+            <li>Open Minecraft Java Edition.</li>
+            <li>Go to Multiplayer, then Add Server.</li>
+            <li>Enter the address below and click Done.</li>
+          </ol>
+          <code>NAME: Llama MC<br>
+          IP: play.llamamc.stufy.qzz.io</code>
+          <br>
+          Note: If this does not work, please add the following to the end of the IP:<br><br><code>:25579</code>
+        </article>
+        <article class="card join">
+          <h3>Bedrock Edition</h3>
+          <ol>
+            <li>Open Minecraft on your device or console.</li>
+            <li>Tap the Join button below to add the server automatically, or add it manually under Servers.</li>
+            <li>Address <code class="inline">play.llamamc.stufy.qzz.io</code>, port <code class="inline">19134</code>.</li>
+          </ol>
+          <a class="btn" href="minecraft://?addExternalServer=Llama%20MC|play.llamamc.stufy.qzz.io:19132">Join on Bedrock</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025&ndash;<span id="year">2026</span> Llama MC. Not affiliated with Mojang or Microsoft.</p>
+    <p>Official Partner of <a href="https://fragmc.github.io" style="text-decoration: underline; color: aquamarine;">FragMC</a></p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="arrow prev" type="button" aria-label="Previous image">&#8249;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="arrow next" type="button" aria-label="Next image">&#8250;</button>
+  </div>
+
+</body>
+</html>
